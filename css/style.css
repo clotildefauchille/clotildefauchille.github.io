@@ -1,0 +1,268 @@
+body {
+  font-family: "Hind", sans-serif;
+  background-color: whitesmoke;
+  /* animation: pulse 5s infinite; */
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: whitesmoke;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav-link {
+  padding: 1.5em;
+  font-size: 1.5em;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgb(128 100 100 / 69%);
+  border-radius: 14px;
+  color: white;
+  /* border: 10px rgba(115, 163, 159, 1) solid; */
+}
+
+.link {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.header-title {
+  font-size: 2em;
+  padding: 6rem 0rem 4rem 4rem;
+  min-width: 64%
+}
+
+.jungle-photo {
+  width: 33%;
+  height: 38%;
+}
+
+.category-title {
+  font-size: 1.6em;
+  font-weight: bold;
+  padding: 2rem 0 0 0;
+  text-align: center;
+}
+
+.category-para {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  padding: 1rem;
+}
+
+.cv {
+  background: white;
+  border-radius: 50%;
+  width: 7rem;
+  height: 5rem;
+  text-align: center;
+  box-shadow: 0 8px 8px rgb(0 0 0 / 40%);
+  /* box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4); */
+}
+
+.project-container {
+  background-color: white;
+  box-shadow: 0 11px 25px rgb(0 0 0 / 16%);
+  margin: 1.5rem auto;
+  border-radius: 14px;
+  padding: 1.5rem;
+}
+
+h4 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: bolder;
+}
+
+.outils-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.progress-bar-container-four {
+  min-width: 52%;
+}
+
+.progress-bar-container {
+  position: relative;
+  margin: 1.5rem;
+  /* margin: 280px auto;  */
+  padding: 20px 40px;
+  border-radius: 14px;
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: 0 11px 25px rgb(0 0 0 / 16%);
+  ;
+}
+
+.progress-bar-loading {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 10px;
+  background: #f1f1f1;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.progress-bar-loading:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-radius: 14px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  animation: loadGit 5s infinite;
+}
+
+@keyframes loadGit {
+  100% {
+    width: 40%;
+    background: #a0d2eb;
+  }
+}
+
+.js:after {
+  animation: loadJs 5s infinite;
+}
+
+@keyframes loadJs {
+  100% {
+    width: 40%;
+    background: #7F9EB8;
+  }
+}
+
+.nodejs:after {
+  animation: loadNodeJs 5s infinite;
+}
+
+@keyframes loadNodeJs {
+  100% {
+    width: 40%;
+    background: #86B7C2;
+  }
+}
+
+.react:after {
+  animation: loadReact 5s infinite;
+}
+
+@keyframes loadReact {
+  100% {
+    width: 70%;
+    background: #86C2AC;
+  }
+}
+
+.sequelize:after {
+  animation: loadSequelize 5s infinite;
+}
+
+@keyframes loadSequelize {
+  100% {
+    width: 35%;
+    background: #7FB893;
+  }
+}
+
+.sql:after {
+  animation: loadSql 5s infinite;
+}
+
+@keyframes loadSql {
+  100% {
+    width: 30%;
+    background: #AB90A8;
+  }
+}
+
+.sass:after {
+  animation: loadSass 5s infinite;
+}
+
+@keyframes loadSass {
+  100% {
+    width: 40%;
+    background: #3C5E5C;
+  }
+}
+
+.agile:after {
+  animation: loadAgile 5s infinite;
+}
+
+@keyframes loadAgile {
+  100% {
+    width: 40%;
+    background: #AB8887;
+  }
+}
+
+.contact-container {
+  text-align: center;
+}
+
+.contact-cv-btn {
+  background-color: white;
+  padding: 1rem;
+  width: 20%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  margin: 1.5rem auto;
+}
+
+.contact-cv-btn:hover {
+  background-color: rgba(128, 172, 168, 0.62);
+}
+
+.contact-mail {
+  /* background-color: red; */
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 640px) {
+  body {
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+  }
+  .nav-container {
+    display: block;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .nav-link {
+    padding: 0em;
+    font-size: 1rem;
+    box-sizing: content-box;
+    width: 100%;
+  }
+  .header-title {
+    font-size: 1.3rem;
+    padding-top: 4rem;
+    padding-left: 0rem;
+  }
+}
