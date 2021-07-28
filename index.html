@@ -1,174 +1,215 @@
-`<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV Clotilde Fauchille</title>
 
-    <!-- css link -->
-    <link href="css/reset.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV Clotilde Fauchille</title>
 
-  <body>
-    <!-- navigation -->
-    <nav>
-      <div class="nav-container">
-        <a class="nav-link" href="#presentation">Présentation</a>
+  <!-- css link -->
+  <link href="css/reset.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap" rel="stylesheet" />
+</head>
 
-        <a class="nav-link" href="#projets">Projets</a>
+<body>
+  <!-- navigation -->
+  <nav>
+    <div class="nav-container">
+      <a class="nav-link" href="#presentation">Présentation</a>
 
-        <a class="nav-link" href="#outils">Outils</a>
+      <a class="nav-link" href="#projets">Projets</a>
 
-        <a class="nav-link" href="#contact">Contact</a>
+      <a class="nav-link" href="#outils">Outils</a>
+
+      <a class="nav-link" href="#contact">Contact</a>
+    </div>
+  </nav>
+  <!-- header -->
+  <header>
+    <h1 class="header-title">
+      Clotilde Fauchille, à la recherche d'un poste de Junior developpeuse web
+      full-stack à partir de septembre 2021
+      <div class="cv-header"><a href="static/document/clotilde-fauchille-cv.pdf" download="">Télécharger CV</a>
       </div>
-    </nav>
-    <!-- header -->
-    <header>
-      <h1 class="header-title">
-        Clotilde Fauchille, à la recherche d'un poste de Junior developpeuse web
-        full-stack à partir de septembre 2021
-      </h1>
-      <!-- photo de moi -->
-      <!-- <div class="header-image"> -->
-        <img
-        src="static/img/photo_cv.png "
-        alt="photo profile clotilde "
-        class="jungle-photo"
-      />
-      <!-- </div> -->
-    </header>
 
-    <!-- page content  -->
+    </h1>
 
-    <!-- <hr class="presentation__container" id="presentation" /> -->
+    <!-- photo de moi -->
+    <!-- <div class="header-image"> -->
+    <img src="static/img/photo_cv.png " alt="photo profile clotilde " class="jungle-photo" />
+    <!-- </div> -->
+  </header>
 
-    <!-- presentation -->
-    <h2 class="category-title" id="presentation">Présentation</h2>
-    <div class="presentation-container-flex">
-      <p class="category-para">
-        Bonjour, <br />
-        Clotilde, 35 ans, je vis à Paris. <br />Après 15 ans de travail dans la
-        musique en tant que technicienne, studio et sonnorisation de concert, je
-        suis en reconversion professionnelle <br />Je me dirige vers le
-        développement web et suis grandement motivée par ce domaine tout aussi
-        passionant.<br />
-        J'ai suivis une formation fullstack Java Script et cherche maintenant à
-        travailler dans l'industrie du web.
-      </p>
+  <!-- page content  -->
+
+  <!-- <hr class="presentation__container" id="presentation" /> -->
+
+  <!-- presentation -->
+  <h2 class="category-title" id="presentation">Présentation</h2>
+  <div class="presentation-container-flex">
+    <p class="category-para">
+      Bonjour, <br />
+      Clotilde, 35 ans, je vis à Paris. <br />Après 15 ans de travail dans la
+      musique en tant que technicienne, studio et sonnorisation de concert, je
+      suis en reconversion professionnelle. <br />Je me dirige vers le
+      développement web et suis grandement motivée par ce domaine tout aussi
+      passionant.<br />
+      J'ai suivis une formation fullstack Java Script chez <a class="link" target="_blank" href="https://oclock.io/">
+        O'Clock </a> et cherche maintenant à
+      travailler dans l'industrie du web.
+    </p>
+  </div>
+
+  <!-- <hr class="projet__container" id="projets" /> -->
+
+  <!-- Projets -->
+
+  <h2 class="category-title" id="projets">Projets</h2>
+  <div class="category-para">
+    <div class="project-container">
+      <div class="project-title">
+        <div type="button" onclick="toggleText1()">
+          <h4>Projet de fin de formation: Fairplay</h4>
+        </div>
+        <h4>Mars 2021</h4>
+      </div>
+      <div id="paraph-hidden" style="display:none">
+        <h5 class="list-title">Objectif:</h5>
+        <span class="list-li">Pemettre aux utilisateurs de participer/proposer des activités sportives dans son
+          voisinage.</span> <br />
+        <h5 class="list-title">Conception:</h5>
+        <ul class="list-li">
+          <li>MCD</li>
+          <li>MLD</li>
+          <li>MVP</li>
+          <li>user-stories</li>
+          <li>Trello</li>
+          <li><a target="_blank" href="https://whimsical.com/">Whimsical</a> (wireframe)</li>
+        </ul>
+        <h5 class="list-title">Outils:</h5>
+        <ul class="list-li">
+          <li>React/Redux</li>
+          <li>NodeJS/Express/Sequelize</li>
+          <li>l'API mapbox-gl</li>
+        </ul>
+        <h5 class="list-title"> Déploiement:</h5>
+        <span class="list-li">VPS chez OVH, Nginx, Ubuntu</span>
+        <h5 class="list-title"> Equipe:</h5>
+        <span class="list-li">4 étudiants</span>
+        <h5 class="list-title">Durée:</h5>
+        <span class="list-li">4 semaines</span>
+      </div>
+      <br>
+      <a class="link-big" target="_blank" href="https://fairplay.dev/">fairplay.dev</a>
+    </div>
+    <div class="project-container">
+      <div class="project-title">
+        <div type="button" onclick="toggleText2()">
+          <h4>Site privé de mariage: A&G</h4>
+        </div>
+        <h4>Avril 2021</h4>
+      </div>
+      <div id="paraph-hidden-2" style="display:none">
+        <h5 class="list-title">Objectif:</h5>
+        <span class="list-li">Permettre aux organisateurs de recevoir les réponses invités sur leur liste google Sheets;
+          informer les invités sur le déroulement du mariage. </span>
+        <h5 class="list-title">Outils:</h5>
+        <ul class="list-li">
+          <li>React/Redux</li>
+          <li>NodeJS/Express</li>
+          <li>Auth0/authManagement</li>
+          <li>google Apps Script</li>
+        </ul>
+        <h5 class="list-title"> Déploiement:</h5>
+        <span class="list-li">VPS chez OVH, Nginx, Ubuntu</span>
+        <h5 class="list-title"> Equipe:</h5>
+        <span class="list-li">Seule</span>
+        <h5 class="list-title">Durée:</h5>
+        <span class="list-li">5 semaines</span>
+      </div>
+      <br>
+      <a class="link-big" target="_blank" href="http://annesophiegabriel.fr">annesophiegabriel.fr</a>
+    </div>
+    <div class="project-container">
+      <div class="project-title">
+        <div type="button" onclick="toggleText3()">
+          <h4>Projets en test: Distordus</h4>
+        </div>
+        <h4>Juin 2020</h4>
+      </div>
+      <div id="paraph-hidden-3" style="display:none">
+        Divers plus petits projets à voir sur Github. <br />
+        Dont Distordus, pour appliquer des effets sur un enregistrement
+        sonore.
+      </div>
+      <br>
+      <a class="link-big" target="_blank" href="https://github.com/clotildefauchille">clotildefauchille</a>
     </div>
 
-    <!-- <hr class="projet__container" id="projets" /> -->
+    <!-- <hr class="outils__container" id="outils" /> -->
 
-    <!-- Projets -->
-
-    <h2 class="category-title" id="projets">Projets</h2>
-    <div class="category-para">
-      <div class="project-container">
-        <h4>Fairplay</h4>
-        <p>
-          En tant qu'étudiante chez O'Clock, nous avons développé cette
-          application en équipe de 4 pendant un mois;
-          <br />Elle permet de proposer et de participer à des activités
-          sportives dans son voisinage. <br />
-          1 semaine de concept (MVP, WireFrames, User-Stories, Trello, MCD) puis
-          3 semaines de code back-end/front-end simultanément. <br />Les technos
-          utilisées sont React/Redux, NodeJS/Express/Sequelize, l'API mapbox-gl.
-          <br />Elle est déployée sur un VPS de OVH.
-        </p>
-        <br>
-        <a class="link" target="_blank" href="http://annesophiegabriel.fr">fairplay.dev</a>
-      </div>
-      <div class="project-container">
-        <h4>A&G</h4>
-        <p>
-          J'ai developpé une application privée pour un mariage.
-          <br />Elle facilite l'organisation des mariés avec un pont entre leur
-          liste d'invités dans google sheet et l'application. <br />Les
-          utilisateurs ont accès aux infos diverses en fonction de leur
-          invitation et doivent donné leur réponses. <br />Les technos utilisées
-          sont React/Redux, Auth0 pour l'authentication et l'API authManagement,
-          google Apps Script, l'API mapbox-gl.
-        </p>
-        <br>
-        <a class="link" target="_blank" href="http://annesophiegabriel.fr">annesophiegabriel.fr</a>
-      </div>
-      <div class="project-container">
-        <h4>Github</h4>
-        <p>
-          Divers plus petits projets à voir sur mon compte Github. <br />
-          Dont Distordus, pour appliquer des effets sur un enregistrement
-          sonore.
-        </p>
-        <br>
-        <a class="link" target="_blank" href="https://github.com/clotildefauchille">clotildefauchille</a>
-      </div>
-
-      <!-- <hr class="outils__container" id="outils" /> -->
-
-      <!-- outils -->
-      <h2 class="category-title" id="outils">Outils</h2>
-      <div class="outils-container">
-        <div class="progress-bar-container-four">
-          <div class="progress-bar-container">
-            Git
-            <div class="progress-bar-loading git"></div>
-          </div>
-          <div class="progress-bar-container">
-            Java Script
-            <div class="progress-bar-loading js"></div>
-          </div>
-          <div class="progress-bar-container">
-            Node JS
-            <div class="progress-bar-loading nodejs"></div>
-          </div>
-          <div class="progress-bar-container">
-            React/Redux
-            <div class="progress-bar-loading react"></div>
-          </div>
+    <!-- outils -->
+    <h2 class="category-title" id="outils">Outils</h2>
+    <div class="outils-container">
+      <div class="progress-bar-container-four">
+        <div class="progress-bar-container">
+          Git
+          <div class="progress-bar-loading git"></div>
         </div>
-        <div class="progress-bar-container-four">
-          <div class="progress-bar-container">
-            Sequelize
-            <div class="progress-bar-loading sequelize"></div>
-          </div>
-          <div class="progress-bar-container">
-            SQL
-            <div class="progress-bar-loading sql"></div>
-          </div>
-          <div class="progress-bar-container">
-            Sass
-            <div class="progress-bar-loading sass"></div>
-          </div>
-          <div class="progress-bar-container">
-            méthodes "Agiles"
-            <div class="progress-bar-loading agile"></div>
-          </div>
+        <div class="progress-bar-container">
+          Java Script
+          <div class="progress-bar-loading js"></div>
+        </div>
+        <div class="progress-bar-container">
+          Node JS
+          <div class="progress-bar-loading nodejs"></div>
+        </div>
+        <div class="progress-bar-container">
+          React/Redux
+          <div class="progress-bar-loading react"></div>
         </div>
       </div>
-      <hr class="contact__container" id="contact" />
+      <div class="progress-bar-container-four">
+        <div class="progress-bar-container">
+          Sequelize
+          <div class="progress-bar-loading sequelize"></div>
+        </div>
+        <div class="progress-bar-container">
+          SQL
+          <div class="progress-bar-loading sql"></div>
+        </div>
+        <div class="progress-bar-container">
+          Sass
+          <div class="progress-bar-loading sass"></div>
+        </div>
+        <div class="progress-bar-container">
+          méthodes Agiles
+          <div class="progress-bar-loading agile"></div>
+        </div>
+      </div>
+    </div>
+    <hr class="contact__container" id="contact" />
 
-      <!-- contact -->
-      <h2 class="category-title">Contact</h2>
-      <div class="contact-container">
+    <!-- contact -->
+    <h2 class="category-title">Contact</h2>
+    <div class="contact-container">
+      <div class="container-github">
         <div class="contact-cv-btn">
-          <a
-            href="static/document/clotilde-fauchille-cv.pdf"
-            download=""
-            class=""
-            ><span>Telechargement CV</span></a
-          >
+          <a href="static/document/clotilde-fauchille-cv.pdf" download="" class=""><span>Telechargement CV</span></a>
         </div>
-        <a class="contact-mail" href="mailto:clotildefauchille@gmail.com"
-          >clotildefauchille@gmail.com
-        </a>
-        <span class="contact-tel">06 66 36 78 34</span>
+        <a target="_blank" href="https://github.com/clotildefauchille"><img src="static/img/github.jpeg"
+            class="github"></a>
       </div>
+
+      <a class="contact-mail" href="mailto:clotildefauchille@gmail.com">clotildefauchille@gmail.com
+      </a>
+      <span class="contact-tel">06 66 36 78 34</span>
     </div>
-  </body>
+  </div>
+  <!-- Script -->
+  <script src="js/display.js"></script>
+</body>
+
 </html>
