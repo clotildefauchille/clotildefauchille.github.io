@@ -303,8 +303,8 @@ h4 {
 
 @media (max-width: 640px) {
   body {
-    margin-left: 0.4rem;
-    margin-right: 0.2rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
   .nav-container {
     display: none;
@@ -317,6 +317,7 @@ h4 {
   }
   header {
     flex-direction: column;
+    border-radius: none;
   }
   .cv-header {
     padding-top: 2.4rem;
@@ -330,7 +331,7 @@ h4 {
     width: 57%;
     height: auto;
     margin-left: 10.5rem;
-    margin-top: -6rem;
+    margin-top: -5.5rem;
   }
   .category-title {
     padding: 1rem 0 1rem 0;
