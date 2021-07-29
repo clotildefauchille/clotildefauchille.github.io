@@ -317,7 +317,7 @@ h4 {
   }
   header {
     flex-direction: column;
-    border-radius: none;
+    border-radius: 0px;
   }
   .cv-header {
     padding-top: 2.4rem;
