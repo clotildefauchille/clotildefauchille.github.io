@@ -51,12 +51,12 @@ header {
 
 .header-title {
   font-size: 2em;
-  padding: 6rem 0rem 4rem 4rem;
+  padding: 5rem 0rem 4rem 4rem;
   min-width: 64%
 }
 
 .cv-header {
-  padding-top: 0.4rem;
+  padding-top: 0.9rem;
   color: black;
   font-size: 1.2rem;
 }
@@ -66,8 +66,8 @@ header {
 }
 
 .jungle-photo {
-  width: 33%;
-  height: 38%;
+  max-width: 39%;
+  height: auto;
 }
 
 .category-title {
@@ -307,13 +307,7 @@ h4 {
     margin-right: 0.2rem;
   }
   .nav-container {
-    display: block;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: whitesmoke;
-    top: 0;
-    left: 0;
-    width: 100%;
+    display: none;
   }
   .nav-link {
     padding: 0em;
@@ -321,9 +315,49 @@ h4 {
     box-sizing: content-box;
     width: 100%;
   }
+  header {
+    flex-direction: column;
+  }
+  .cv-header {
+    padding-top: 2.4rem;
+  }
   .header-title {
-    font-size: 1.3rem;
-    padding-top: 4rem;
-    padding-left: 0rem;
+    font-size: 1.6rem;
+    padding: 1rem 1rem 0 1rem;
+  }
+  .jungle-photo {
+    max-width:none;
+    width: 57%;
+    height: auto;
+    margin-left: 10.5rem;
+    margin-top: -6rem;
+  }
+  .category-title {
+    padding: 1rem 0 1rem 0;
+  }
+  .category-para {
+    padding: 0rem 1rem 0rem 1rem;
+    font-size: 1.1rem;
+  }
+  .project-title {
+    flex-direction: column;
+  }
+  .date {
+    font-size: 1rem;
+  }
+  .progress-bar-container {
+    margin: 0.5rem;
+    padding: 20px 7px;
+  }
+  .contact-cv-btn {
+    width: 68%;
+    margin: 0.5rem auto;
+  }
+  .github {
+    width: 7rem;
+    margin-bottom: 0rem;
+  }
+  .contact-mail, .contact-tel {
+    font-size: 1rem;
   }
 }
