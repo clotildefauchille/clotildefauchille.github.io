@@ -13,6 +13,12 @@
       href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -33,8 +39,16 @@
       <h1 class="header-title">
         Clotilde Fauchille, à la recherche d'un poste de Junior développeuse web
         full-stack à partir d'octobre 2021
+        <div class="arrow">
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+        </div>
         <div class="cv-header">
-          <a href="static/document/clotildefauchille-cv.pdf" download=""
+          <a
+            id="download-cv"
+            href="static/document/clotildefauchille-cv.pdf"
+            download=""
             >Télécharger CV</a
           >
         </div>
@@ -55,15 +69,31 @@
     <!-- <hr class="presentation__container" id="presentation" /> -->
 
     <!-- presentation -->
-    <h2 class="category-title" id="presentation">Whoami</h2>
+    <h2 class="category-title" id="presentation">WHOAMI</h2>
     <div class="presentation-container-flex">
       <p class="category-para">
-En cherchant un nouveau souffle à mon parcours professionnel, un de mes proches qui est ingénieur en informatique m'a parlé du développement web. J'ai accroché à la belle mentalité de partage de connaissances chez cette communauté de développeurs. La logique, l'aspect recherche et l'inépuisable besoin de se former m'ont passionnés. <br />Étant précédemment ingénieur du son dans le live, je cherchais une voie dans la technique. De la même manière où j’ai pu être le tremplin des artistes sur scène dans mon précédent métier, je retrouve cette pratique magique en étant le tremplin technique des vitrines de demain.
-<br /><br />
-Je décide de mettre ma vie sociale entre parenthèses, j’organise ma vie familiale au millimètre et plonge dans une formation intensive chez  <a class="link" target="_blank" href="https://oclock.io/"> O'Clock </a> en télé-présentiel: une formation de développement web fullstack JavaScript !<br />        
-Un an maintenant de code, de petites victoires, de grandes révélations, de dépassements... Diplôme en poche, je suis prête et plus que déterminée à continuer dans ce domaine riche. <br />
-Je cherche maintenant un poste dans le développement web. Ayant conscience que la voie de l’apprentissage est infinie, je continue à me former et à pratiquer avec des projets personnels.<br />
-J’ai hâte de pouvoir travailler en équipe, autour de projets concrets!
+        En cherchant un nouveau souffle à mon parcours professionnel, un de mes
+        proches, ingénieur en informatique m'a mis sur la voie du développement
+        web. J'ai tout de suite accroché à la mentalité de partage de
+        connaissances chez la communauté de développeurs. La logique, l'aspect
+        recherche et l'inépuisable besoin de se former m'ont passionnés.
+        <br />Étant précédemment ingénieur du son dans le live, je cherchais une
+        voie dans la technique. De la même manière où j’ai pu être le tremplin
+        des artistes sur scène dans mon précédent métier, je retrouve cette
+        pratique en étant le tremplin technique des vitrines de demain.
+        <br /><br />
+        Je décide de mettre ma vie sociale entre parenthèses, j’organise ma vie
+        familiale au millimètre et plonge dans une formation intensive chez
+        <a class="link" target="_blank" href="https://oclock.io/"> O'Clock </a>
+        en télé-présentiel: une formation de développement web fullstack
+        JavaScript !<br />
+        Un an maintenant de code, de petites victoires, de grandes révélations,
+        de dépassements... Diplôme en poche, je suis prête et plus que
+        déterminée à continuer dans ce domaine riche. <br />
+        Je cherche maintenant un poste ou un stage dans le développement web.
+        Ayant conscience que la voie de l’apprentissage est infinie, je continue
+        à me former et à pratiquer avec des projets personnels.<br />
+        J’ai hâte de pouvoir travailler en équipe, autour de projets concrets!
       </p>
     </div>
 
@@ -71,7 +101,7 @@ J’ai hâte de pouvoir travailler en équipe, autour de projets concrets!
 
     <!-- Projets -->
 
-    <h2 class="category-title" id="projets">Projets</h2>
+    <h2 class="category-title" id="projets">PROJETS</h2>
     <div class="category-para">
       <div class="project-container">
         <div class="project-title">
@@ -81,36 +111,45 @@ J’ai hâte de pouvoir travailler en équipe, autour de projets concrets!
           <h4 class="date">Mars 2021</h4>
         </div>
         <div id="paraph-hidden" style="display: none">
-          <h5 class="list-title">Objectif:</h5>
-          <span class="list-li"
-            >Pemettre aux utilisateurs de participer/proposer des activités
-            sportives dans son voisinage.</span
-          >
-          <br />
-          <h5 class="list-title">Conception:</h5>
-          <ul class="list-li">
-            <li>MCD</li>
-            <li>MLD</li>
-            <li>MVP</li>
-            <li>user-stories</li>
-            <li>Trello</li>
-            <li>
-              <a target="_blank" href="https://whimsical.com/">Whimsical</a>
-              (wireframe)
-            </li>
-          </ul>
-          <h5 class="list-title">Outils:</h5>
-          <ul class="list-li">
-            <li>React/Redux</li>
-            <li>NodeJS/Express/Sequelize/postgreSQL</li>
-            <li>l'API mapbox-gl</li>
-          </ul>
-          <h5 class="list-title">Déploiement:</h5>
-          <span class="list-li">VPS chez OVH, Nginx, Ubuntu</span>
-          <h5 class="list-title">Equipe:</h5>
-          <span class="list-li">4 étudiants</span>
-          <h5 class="list-title">Durée:</h5>
-          <span class="list-li">4 semaines</span>
+          <div class="container-fairplay">
+            <div>
+              <h5 class="list-title">Objectif:</h5>
+              <span class="list-li"
+                >Pemettre aux utilisateurs de participer/proposer des activités
+                sportives dans son voisinage.</span
+              >
+              <br />
+              <h5 class="list-title">Conception:</h5>
+              <ul class="list-li">
+                <li>MCD</li>
+                <li>MLD</li>
+                <li>MVP</li>
+                <li>user-stories</li>
+                <li>Trello</li>
+                <li>
+                  <a target="_blank" href="https://whimsical.com/">Whimsical</a>
+                  (wireframe)
+                </li>
+              </ul>
+              <h5 class="list-title">Outils:</h5>
+              <ul class="list-li">
+                <li>React/Redux</li>
+                <li>NodeJS/Express/Sequelize/postgreSQL</li>
+                <li>l'API mapbox-gl</li>
+              </ul>
+              <h5 class="list-title">Déploiement:</h5>
+              <span class="list-li">VPS chez OVH, Nginx, Ubuntu</span>
+              <h5 class="list-title">Equipe:</h5>
+              <span class="list-li">4 étudiants</span>
+              <h5 class="list-title">Durée:</h5>
+              <span class="list-li">4 semaines</span>
+            </div>
+            <img
+              class="img-fairplay"
+              src="./static/img/fairplay.svg"
+              alt="fairplay"
+            />
+          </div>
         </div>
         <br />
         <a class="link-big" target="_blank" href="https://fairplay.dev/"
@@ -125,25 +164,36 @@ J’ai hâte de pouvoir travailler en équipe, autour de projets concrets!
           <h4 class="date">Avril 2021</h4>
         </div>
         <div id="paraph-hidden-2" style="display: none">
-          <h5 class="list-title">Objectif:</h5>
-          <span class="list-li"
-            >Permettre aux organisateurs de recevoir les réponses invités sur
-            leur liste google Sheets; informer les invités sur le déroulement du
-            mariage. Pour se connecter, mail: clotildefauchille@gmail.com mp: Clo3748
-          </span>
-          <h5 class="list-title">Outils:</h5>
-          <ul class="list-li">
-            <li>React/Redux</li>
-            <li>NodeJS/Express</li>
-            <li>Auth0/authManagement</li>
-            <li>google Apps Script</li>
-          </ul>
-          <h5 class="list-title">Déploiement:</h5>
-          <span class="list-li">VPS chez OVH, Nginx, Ubuntu</span>
-          <h5 class="list-title">Equipe:</h5>
-          <span class="list-li">Seule</span>
-          <h5 class="list-title">Durée:</h5>
-          <span class="list-li">5 semaines</span>
+          <div class="container-fairplay">
+            <div>
+              <h5 class="list-title">Objectif:</h5>
+              <span class="list-li"
+                >Permettre aux organisateurs de recevoir les réponses invités
+                sur leur liste google Sheets; informer les invités sur le
+                déroulement du mariage. Pour se connecter, mail:
+                clotildefauchille@gmail.com mp: Clo3748
+              </span>
+              <h5 class="list-title">Outils:</h5>
+              <ul class="list-li">
+                <li>React/Redux</li>
+                <li>NodeJS/Express</li>
+                <li>Auth0/authManagement</li>
+                <li>google Apps Script</li>
+              </ul>
+              <h5 class="list-title">Déploiement:</h5>
+              <span class="list-li">VPS chez OVH, Nginx, Ubuntu</span>
+              <h5 class="list-title">Equipe:</h5>
+              <span class="list-li">Seule</span>
+              <h5 class="list-title">Durée:</h5>
+              <span class="list-li">5 semaines</span>
+            </div>
+<img
+              class="img-fairplay"
+              src="./static/img/stars.svg"
+              alt="fairplay"
+            />
+
+          </div>
         </div>
         <br />
         <a class="link-big" target="_blank" href="http://annesophiegabriel.fr"
@@ -158,11 +208,13 @@ J’ai hâte de pouvoir travailler en équipe, autour de projets concrets!
           <h4 class="date">Juin 2020</h4>
         </div>
         <div id="paraph-hidden-3" style="display: none">
-         Distordus, pour appliquer des effets sur un enregistrement
-          sonore, utilisant l'API Audio. Déploiement continu<br />
+          Distordus, pour appliquer des effets sur un enregistrement sonore,
+          utilisant l'API Audio. Déploiement continu<br />
 
-        <a class="link-big" target="_blank" href="https://distord.us/">https://distord.us/</a><br /><br /><br />
-          Divers plus petits projets à voir sur Github: 
+          <a class="link-big" target="_blank" href="https://distord.us/"
+            >https://distord.us/</a
+          ><br /><br /><br />
+          Divers plus petits projets à voir sur Github:
         </div>
         <br />
         <a
@@ -176,7 +228,7 @@ J’ai hâte de pouvoir travailler en équipe, autour de projets concrets!
       <!-- <hr class="outils__container" id="outils" /> -->
 
       <!-- outils -->
-      <h2 class="category-title" id="outils">Outils</h2>
+      <h2 class="category-title" id="outils">OUTILS</h2>
       <div class="outils-container">
         <div class="progress-bar-container-four">
           <div class="progress-bar-container">
@@ -218,10 +270,10 @@ J’ai hâte de pouvoir travailler en équipe, autour de projets concrets!
       <hr class="contact__container" id="contact" />
 
       <!-- contact -->
-      <h2 class="category-title">Contact</h2>
+      <h2 class="category-title">CONTACT</h2>
       <div class="contact-container">
         <div class="container-github">
-          <div class="contact-cv-btn">
+          <div class="contact-cv-btn link-btn">
             <a
               href="static/document/clotildefauchille-cv.pdf"
               download=""
@@ -230,23 +282,23 @@ J’ai hâte de pouvoir travailler en équipe, autour de projets concrets!
             >
           </div>
           <a target="_blank" href="https://github.com/clotildefauchille"
-            ><img src="static/img/github.jpeg" class="github"
+            ><img src="static/img/github.jpeg" class="github link-btn"
           /></a>
-          <a target="_blank" href="https://www.linkedin.com/in/clotildefauchille/"
-            ><img src="static/img/linkedin.png" class="linkedin"
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/clotildefauchille/"
+            ><img src="static/img/linkedin.png" class="linkedin link-btn"
           /></a>
         </div>
-        </div>
- </div>
-          <div class="
-          ">
-            
-               <a class="contact-mail" href="mailto:clotildefauchille@gmail.com"
-          >clotildefauchille@gmail.com
-        </a>
-              
-        <span class="contact-tel">06 66 36 78 34</span>
-          </div>
+      </div>
+    </div>
+    <div class="">
+      <a class="contact-mail" href="mailto:clotildefauchille@gmail.com"
+        >clotildefauchille@gmail.com
+      </a>
+
+      <span class="contact-tel">06 66 36 78 34</span>
+    </div>
     <!-- Script -->
     <script src="js/display.js"></script>
   </body>
