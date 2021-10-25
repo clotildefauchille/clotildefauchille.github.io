@@ -40,6 +40,13 @@ header {
   background-blend-mode: hard-light;
 }
 
+.photo-container {
+  background-image: url('../static/img/photo_cv.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+ width: 100%;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -171,8 +178,7 @@ header {
 }
 
 .jungle-photo {
-  max-width: 39%;
-  height: auto;
+  display: none;
 }
 
 .category-title {
@@ -303,7 +309,7 @@ h4 {
 @keyframes loadJs {
   100% {
     width: 40%;
-    background: #F68B8A;
+    background: #FAF2EF;
   }
 }
 
@@ -329,7 +335,7 @@ h4 {
 @keyframes loadReact {
   100% {
     width: 70%;
-    background: #F68B8A;
+    background: #FAF2EF;
   }
 }
 
@@ -355,7 +361,7 @@ h4 {
 @keyframes loadSql {
   100% {
     width: 30%;
-    background: #F68B8A;
+    background: #FAF2EF;
   }
 }
 
@@ -381,7 +387,7 @@ h4 {
 @keyframes loadAgile {
   100% {
     width: 40%;
-    background: #F68B8A;
+    background: #FAF2EF;
   }
 }
 
@@ -458,6 +464,7 @@ h4 {
     padding: 1rem 1rem 0 1rem;
   }
   .jungle-photo {
+    display: block;
     max-width: none;
     width: 39%;
     height: auto;
