@@ -27,9 +27,9 @@
       <div class="nav-container">
         <a class="nav-link" href="#presentation">Présentation</a>
 
-        <a class="nav-link" href="#projets">Projets</a>
+        <a class="nav-link" href="#projets">Expériences</a>
 
-        <a class="nav-link" href="#outils">Outils</a>
+        <a class="nav-link" href="#outils">Technologies</a>
 
         <a class="nav-link" href="#contact">Contact</a>
       </div>
@@ -38,7 +38,7 @@
     <header>
       <h1 class="header-title">
         Clotilde Fauchille, à la recherche d'un poste de Junior développeuse web
-        full-stack
+        fullstack/frontend
         <div class="arrow">
           <div class="chevron"></div>
           <div class="chevron"></div>
@@ -79,14 +79,11 @@
         connaissances chez la communauté de développeurs. La logique, l'aspect
         recherche et l'inépuisable besoin de se former m'ont passionnés.
         <br />Étant précédemment ingénieur du son dans le live, je cherchais une
-        voie dans la technique. 
+        voie stimulante dans la technique. 
         <br /><br />
-        J'ai donc commencé par suivre une formation professionnalisante chez l'organisme
-        <a class="link" target="_blank" href="https://oclock.io/"> O'Clock </a>
-        en télé-présentiel: une formation de développement web full stack
-        JavaScript.<br />
-        Après avoir obtenu le diplôme, j'ai poursuivi mon apprentissage en faisant un stage de 4 mois chez Linkeo. <br />
-        Je suis actuellement en alternance chez Linkeo et suit une formation de concepteur developpeur full stack.<br />
+        J'ai commencé par suivre une formation professionnalisante intensive chez l'organisme
+        <a class="link" target="_blank" href="https://oclock.io/"> O'Clock </a>, formation de développement web fullstack JavaScript.<br />
+        Après avoir obtenu le diplôme, j'ai poursuivi mon apprentissage au sein de l'entreprise Linkeo en faisant d'abord un stage de 4 mois puis une alternance. <br />J'ai passé mon diplôme de concepteur développeur d'application avec l'organisme 3W Academy et je suis actuellement à la recherche d'un poste de développeur web.<br /><br />
         Ayant conscience que la voie de l’apprentissage est infinie, je continue
         à me former et à pratiquer avec des projets personnels dont les liens sont ci-contre.<br />
       </p>
@@ -96,41 +93,78 @@
 
     <!-- Projets -->
 
-    <h2 class="category-title" id="projets">PROJETS</h2>
+    <h2 class="category-title" id="projets">EXPERIENCES</h2>
     <div class="category-para">
+
+      <div class="project-container">
+        <div class="project-title">
+          <div type="button" onclick="toggleText('linkeo')">
+            <h4>Contrat d'alternance chez Linkeo, au siège, équipe SI</h4>
+          </div>
+          <h4 class="date">depuis novembre 2023</h4>
+        </div>
+        <div id="linkeo" style="display: none">
+          <div class="container-fairplay">
+            <div>
+              <h5 class="list-title">Projets et tâches accomplies:</h5>
+            * SeoBooster: application pour l'amélioration du référencement des sites vendu aux clients. 
+            <br/>Développement d'un parser ODT en Java pour lire les documents des rédacteurs et en extraire les styles et liens. Génération d'une template pour document openOffice. 
+            <br/>Implémentation d'un éditeur et d'un système d'optimisation du linking des pages du contenu du site vendu au client. <br/>
+            * GestionCo: outils de pilotage des données de gestion de l'entreprise, et de gestion des primes aux commerciaux.<br/>
+            * Moteur de recherche à facette sur des factures.
+            <br />
+              <h5 class="list-title">Technologies:</h5>
+              <ul class="list-li">
+                <li>React/Redux/NextJs</li>
+                <li>MySql/Workbench</li>
+                <li>Quill-Editor</li>
+                <li>librairie OpenOffice</li>
+                <li>ElasticSearch</li>
+                <li>MaterialUI</li>
+                <li>Material React Table</li>
+                <li>Bootstrap</li>
+              </ul>
+              <h5 class="list-title">Gestion:</h5>
+              <ul class="list-li">
+              <li class="list-li">Confluences</li>
+              <li class="list-li">Slack</li>
+              <li class="list-li">Git/Bibucket</li>
+            </div>
+          </div>
+        </div>
+        <br />
+        <a class="link-big" target="_blank" href="https://www.linkeo.com/"
+          >Linkeo</a
+        >
+      </div>
+
       
       <div class="project-container">
         <div class="project-title">
-          <div type="button" onclick="toggleText1()">
-            <h4>Projet de fin de formation: DDay</h4>
+          <div type="button" onclick="toggleText('dday')">
+            <h4>Application: DDay</h4>
           </div>
           <h4 class="date">Février 2023</h4>
         </div>
-        <div id="paraph-hidden" style="display: none">
+        <div id="dday" style="display: none">
           <div class="container-fairplay">
             <div>
-              <h5 class="list-title">Objectif:</h5>
+              <h5 class="list-title">Objectifs:</h5>
               <span class="list-li"
-                >Aider des futurs mariés à l'organisation de leur mariage et informer les invités. <br/>
-                Un organisateur pourra gérer sa liste d'invités, ajouter des évenements, des lieux, custumiser son site, envoyer des invitations. 
-                <br/>Un invité recevra une invitation par mail à se connecter pour donner les détails de sa venue, visualiser les informations du mariage et écrire dans le livre d'or</span>
+                >Aider des futurs mariés/pacsés à l'organisation de leur événement et informer les invités. <br/>
+                Le client à accès à la gestion de sa liste d'invités, l'ajout d'événements, de lieux sur une carte, à la customisation de son site, l'envoi d'invitations et la récupération des réponses. 
+                <br/>Un invité pourra visualiser les informations relatives à l'événement, envoyer sa réponse, écrire ses feedback dans le livre d'or</span>
               <br />
               <h5 class="list-title">Conception:</h5>
               <ul class="list-li">
-                <li>MCD</li>
-                <li>MLD</li>
-                <li>MVP</li>
-                <li>user-stories</li>
-                <li>Trello</li>
-                <li>
-                  <a target="_blank" href="https://whimsical.com/">Whimsical</a>
-                  (wireframe)
-                </li>
+                <li>Merise</li>
+                <li>UML</li>
               </ul>
-              <h5 class="list-title">Outils:</h5>
+              <h5 class="list-title">Technologies:</h5>
               <ul class="list-li">
-                <li>React/Redux DevTools/MUI</li>
-                <li>NodeJS/Express/MySql</li>
+                <li>React/Redux DevTools/Material UI</li>
+                <li>NodeJS/Express</li>
+                <li>MySql/Workbench</li>
                 <li>Firebase Auth</li>
               </ul>
               <h5 class="list-title">Déploiement:</h5>
@@ -138,7 +172,7 @@
               <h5 class="list-title">Equipe:</h5>
               <span class="list-li">seule</span>
               <h5 class="list-title">Durée:</h5>
-              <span class="list-li">4 semaines</span>
+              <span class="list-li">8 semaines</span>
             </div>
           </div>
         </div>
@@ -150,28 +184,28 @@
 
 
 
-
       <div class="project-container">
         <div class="project-title">
-          <div type="button" onclick="toggleText2()">
+          <div type="button" onclick="toggleText('A&G')">
             <h4>Site privé de mariage: A&G</h4>
           </div>
           <h4 class="date">Avril 2021</h4>
         </div>
-        <div id="paraph-hidden-2" style="display: none">
+        <div id="A&G" style="display: none">
           <div class="container-fairplay">
             <div>
-              <h5 class="list-title">Objectif:</h5>
+              <h5 class="list-title">Objectifs:</h5>
               <span class="list-li"
                 >Permettre aux organisateurs de recevoir les réponses invités
                 sur leur liste google Sheets; informer les invités sur le
                 déroulement du mariage. Pour se connecter, mail:
                 clotildefauchille@gmail.com mp: Clo3748
               </span>
-              <h5 class="list-title">Outils:</h5>
+              <h5 class="list-title">Technologies:</h5>
               <ul class="list-li">
                 <li>React/Redux</li>
                 <li>NodeJS/Express</li>
+                <li>PostgreSQL</li>
                 <li>Auth0/authManagement</li>
                 <li>google Apps Script</li>
               </ul>
@@ -198,36 +232,30 @@
 
       <div class="project-container">
         <div class="project-title">
-          <div type="button" onclick="toggleText1()">
+          <div type="button" onclick="toggleText('fairplay')">
             <h4>Projet de fin de formation: Fairplay</h4>
           </div>
           <h4 class="date">Mars 2021</h4>
         </div>
-        <div id="paraph-hidden" style="display: none">
+        <div id="fairplay" style="display: none">
           <div class="container-fairplay">
             <div>
-              <h5 class="list-title">Objectif:</h5>
+              <h5 class="list-title">Objectifs:</h5>
               <span class="list-li"
-                >Pemettre aux utilisateurs de participer/proposer des activités
+                >Permettre aux utilisateurs de participer/proposer des activités
                 sportives dans son voisinage.</span
               >
               <br />
-              <h5 class="list-title">Conception:</h5>
+              <h5 class="list-title">Conception et gestion:</h5>
               <ul class="list-li">
-                <li>MCD</li>
-                <li>MLD</li>
-                <li>MVP</li>
-                <li>user-stories</li>
-                <li>Trello</li>
-                <li>
-                  <a target="_blank" href="https://whimsical.com/">Whimsical</a>
-                  (wireframe)
-                </li>
+                <li>Merise</li>
+                <li>Scrum, Agile</li>
               </ul>
-              <h5 class="list-title">Outils:</h5>
+              <h5 class="list-title">Technologies:</h5>
               <ul class="list-li">
                 <li>React/Redux</li>
-                <li>NodeJS/Express/Sequelize/postgreSQL</li>
+                <li>NodeJS/Express</li>
+                <li>Sequelize/PostgreSQL</li>
                 <li>l'API mapbox-gl</li>
               </ul>
               <h5 class="list-title">Déploiement:</h5>
@@ -254,12 +282,12 @@
 
       <div class="project-container">
         <div class="project-title">
-          <div type="button" onclick="toggleText3()">
+          <div type="button" onclick="toggleText('Distordus')">
             <h4>Projets en cours: Distordus</h4>
           </div>
           <h4 class="date">Juin 2020</h4>
         </div>
-        <div id="paraph-hidden-3" style="display: none">
+        <div id="Distordus" style="display: none">
           Distordus, pour appliquer des effets sur un enregistrement sonore,
           utilisant l'API Audio. Déploiement continu<br />
 
@@ -280,42 +308,58 @@
       <!-- <hr class="outils__container" id="outils" /> -->
 
       <!-- outils -->
-      <h2 class="category-title" id="outils">OUTILS</h2>
+      <h2 class="category-title" id="outils">Compétences</h2>
       <div class="outils-container">
         <div class="progress-bar-container-four">
           <div class="progress-bar-container">
-            Git
-            <div class="progress-bar-loading git"></div>
+            Node JS/ExpressJS
+            <div class="progress-bar-loading sixty"></div>
+          </div>
+          <div class="progress-bar-container">
+            React
+            <div class="progress-bar-loading seventy"></div>
+          </div>
+          <div class="progress-bar-container">
+            Redux/Redux ToolKit
+            <div class="progress-bar-loading eighty"></div>
+          </div>
+          <div class="progress-bar-container">
+            Git/Github/Bitbucket
+            <div class="progress-bar-loading seventy"></div>
           </div>
           <div class="progress-bar-container">
             JavaScript
-            <div class="progress-bar-loading js"></div>
+            <div class="progress-bar-loading seventy"></div>
           </div>
           <div class="progress-bar-container">
-            Node JS
-            <div class="progress-bar-loading nodejs"></div>
-          </div>
-          <div class="progress-bar-container">
-            React/Redux
-            <div class="progress-bar-loading react"></div>
+            Scrum/Agiles
+            <div class="progress-bar-loading eighty"></div>
           </div>
         </div>
         <div class="progress-bar-container-four">
           <div class="progress-bar-container">
-            Sequelize
-            <div class="progress-bar-loading sequelize"></div>
+            SQL/MySql/PostgresSql
+            <div class="progress-bar-loading seventy"></div>
           </div>
           <div class="progress-bar-container">
-            SQL
-            <div class="progress-bar-loading sql"></div>
+            ElasticSearch
+            <div class="progress-bar-loading thirty"></div>
           </div>
           <div class="progress-bar-container">
-            Sass
-            <div class="progress-bar-loading sass"></div>
+            Css/Sass
+            <div class="progress-bar-loading seventy"></div>
           </div>
           <div class="progress-bar-container">
-            Agiles
-            <div class="progress-bar-loading agile"></div>
+            Mui/Bootsrap
+            <div class="progress-bar-loading seventy"></div>
+          </div>
+          <div class="progress-bar-container">
+            Merise
+          <div class="progress-bar-loading eighty"></div>
+          </div>
+          <div class="progress-bar-container">
+            UML
+          <div class="progress-bar-loading eighty"></div>
           </div>
         </div>
       </div>

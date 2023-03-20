@@ -31,18 +31,22 @@ header {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  background-color: rgba(186, 152, 144, 0.14);
+  background-color: #2f4f4f;
   border-radius: 14px;
   box-shadow: 0 0 3px 1px whitesmoke inset;
   background-size: 1em 1em, 100% 100%;
   background-blend-mode: hard-light;
 }
 
+.header-title {
+  color: #F5F5F5;
+}
+
 .photo-container {
   background-image: url('../static/img/photo_cv.png');
   background-size: cover;
   background-repeat: no-repeat;
- width: 100%;
+  width: 100%;
 }
 
 .container {
@@ -57,7 +61,9 @@ header {
   position: absolute;
   left: 5rem;
   top: 23rem;
-  color: #28394a;
+  /* color: #F5F5F5; */
+  color: black;
+
   font-weight: bold;
 }
 
@@ -92,7 +98,7 @@ header {
   top: 0;
   height: 100%;
   width: 50%;
-  background: #28394a;
+  background: #F5F5F5;
 }
 
 .chevron:before {
@@ -110,14 +116,17 @@ header {
   25% {
     opacity: 1;
   }
+
   33.3% {
     opacity: 1;
     transform: translateY(2.28rem);
   }
+
   66.6% {
     opacity: 1;
     transform: translateY(3.12rem);
   }
+
   100% {
     opacity: 0;
     transform: translateY(4.8rem) scale(0.5);
@@ -128,14 +137,17 @@ header {
   25% {
     opacity: 1;
   }
+
   33.3% {
     opacity: 1;
     transform: translateY(2.28rem);
   }
+
   66.6% {
     opacity: 1;
     transform: translateY(3.12rem);
   }
+
   100% {
     opacity: 0;
     transform: translateY(4.8rem) scale(0.5);
@@ -286,108 +298,69 @@ h4 {
   height: 100%;
   border-radius: 14px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  animation: loadGit 5s;
-  animation-iteration-count: 1;
+
+}
+
+.thirty:after {
+  animation: thirty 5s;
   animation-fill-mode: forwards;
 }
 
-@keyframes loadGit {
-  100% {
-    width: 40%;
-    background: #ff4141;
-  }
-}
-
-.js:after {
-  animation: loadJs 5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes loadJs {
-  100% {
-    width: 40%;
-    background: #FAF2EF;
-  }
-}
-
-.nodejs:after {
-  animation: loadNodeJs 5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes loadNodeJs {
-  100% {
-    width: 40%;
-    background: #ff4141;
-  }
-}
-
-.react:after {
-  animation: loadReact 5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes loadReact {
-  100% {
-    width: 70%;
-    background: #FAF2EF;
-  }
-}
-
-.sequelize:after {
-  animation: loadSequelize 5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes loadSequelize {
-  100% {
-    width: 35%;
-    background: #ff4141;
-  }
-}
-
-.sql:after {
-  animation: loadSql 5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes loadSql {
+@keyframes thirty {
   100% {
     width: 30%;
-    background: #FAF2EF;
-  }
-}
-
-.sass:after {
-  animation: loadSass 5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes loadSass {
-  100% {
-    width: 40%;
     background: #ff4141;
   }
 }
 
-.agile:after {
-  animation: loadAgile 5s;
-  animation-iteration-count: 1;
+.forty:after {
+  animation: forty 5s;
   animation-fill-mode: forwards;
 }
 
-@keyframes loadAgile {
+@keyframes forty {
   100% {
-    width: 40%;
-    background: #FAF2EF;
+    width: 60%;
+    background: #ff4141;
   }
 }
+
+.sixty:after {
+  animation: sixty 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes sixty {
+  100% {
+    width: 60%;
+    background: #ff4141;
+  }
+}
+
+.seventy:after {
+  animation: seventy 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes seventy {
+  100% {
+    width: 70%;
+    background: #ff4141;
+  }
+}
+
+.eighty:after {
+  animation: eighty 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes eighty {
+  100% {
+    width: 80%;
+    background: #ff4141;
+  }
+}
+
 
 .contact-container {
   text-align: center;
@@ -441,26 +414,32 @@ h4 {
     margin-left: 0rem;
     margin-right: 0rem;
   }
+
   .nav-container {
     display: none;
   }
+
   .nav-link {
     padding: 0em;
     font-size: 1rem;
     box-sizing: content-box;
     width: 100%;
   }
+
   header {
     flex-direction: column;
     border-radius: 0px;
   }
+
   .cv-header {
     padding-top: 2.4rem;
   }
+
   .header-title {
     font-size: 1.5rem;
     padding: 1rem 1rem 0 1rem;
   }
+
   .jungle-photo {
     display: block;
     max-width: none;
@@ -469,41 +448,52 @@ h4 {
     margin-left: 15.5rem;
     margin-top: -4.5rem;
   }
+
   .arrow {
     top: 4rem;
   }
+
   #download-cv {
     left: 1rem;
     top: 9rem;
   }
+
   .category-title {
     padding: 1rem 0 1rem 0;
   }
+
   .category-para {
     padding: 0rem 1rem 0rem 1rem;
     font-size: 1.1rem;
   }
+
   .project-title {
     flex-direction: column;
   }
+
   .img-fairplay {
     display: none;
   }
+
   .date {
     font-size: 1rem;
   }
+
   .progress-bar-container {
     margin: 0.5rem;
     padding: 20px 7px;
   }
+
   .contact-cv-btn {
     width: 68%;
     margin: 0.5rem auto;
   }
+
   .github {
     width: 7rem;
     margin-bottom: 0rem;
   }
+
   .contact-mail, .contact-tel {
     font-size: 1rem;
   }
