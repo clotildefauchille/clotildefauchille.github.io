@@ -16,7 +16,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
 
         if (targetElement) {
             const yOffset = -70; 
-            const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            const y = targetElement.getBoundingClientRect().top + window.scrollY + yOffset;
             window.scrollTo({ top: y, behavior: 'smooth' });
         }
     });
