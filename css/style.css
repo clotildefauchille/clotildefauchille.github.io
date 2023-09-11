@@ -31,16 +31,16 @@ header {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  background-color: #2f4f4f;
+  background-color: white;
   border-radius: 14px;
   box-shadow: 0 0 3px 1px whitesmoke inset;
   background-size: 1em 1em, 100% 100%;
   background-blend-mode: hard-light;
-  outline: 8px ridge #2f4f4f;
+  outline: 10px ridge #CFEBDF;
 }
 
 .header-title {
-  color: #F5F5F5;
+  color: black;
   margin-bottom: 4rem;
 }
 
@@ -225,6 +225,24 @@ header {
   width: 47%;
 }
 
+.img-png {
+  object-fit: cover;
+  width: 40%;
+  height: 15rem;
+}
+
+#img-dday {
+  object-fit: cover;
+  width: 40%;
+  height: 25rem;
+}
+
+#img-linkeo {
+  object-fit: cover;
+  width: 40%;
+  height: 15rem;
+}
+
 .list-title {
   padding: 1rem 0 0.5rem 0;
   font-weight: bolder;
@@ -308,7 +326,7 @@ h4 {
 @keyframes thirty {
   100% {
     width: 30%;
-    background: #ff4141;
+    background: #CFEBDF;
   }
 }
 
@@ -320,7 +338,7 @@ h4 {
 @keyframes forty {
   100% {
     width: 60%;
-    background: #ff4141;
+    background: #CFEBDF;
   }
 }
 
@@ -332,7 +350,7 @@ h4 {
 @keyframes sixty {
   100% {
     width: 60%;
-    background: #ff4141;
+    background: #CFEBDF;
   }
 }
 
@@ -344,7 +362,7 @@ h4 {
 @keyframes seventy {
   100% {
     width: 70%;
-    background: #ff4141;
+    background: #CFEBDF;
   }
 }
 
@@ -356,7 +374,7 @@ h4 {
 @keyframes eighty {
   100% {
     width: 80%;
-    background: #ff4141;
+    background: #CFEBDF;
   }
 }
 
