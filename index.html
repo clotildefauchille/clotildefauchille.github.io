@@ -70,407 +70,409 @@
     <!-- <hr class="presentation__container" id="presentation" /> -->
 
     <!-- presentation -->
-    <h2 class="category-title" id="presentation">WHOAMI</h2>
-    <div class="presentation-container-flex">
-      <p class="category-para">
-        En cherchant un nouveau souffle à mon parcours professionnel, un de mes
-        proches, ingénieur en informatique, m'a mis sur la voie du développement
-        web. J'ai tout de suite accroché à la mentalité de partage de
-        connaissances chez la communauté de développeurs. La logique, l'aspect
-        recherche et l'inépuisable besoin de se former m'ont passionnés.
-        <br />Étant précédemment ingénieur du son dans le live, je cherchais une
-        voie stimulante dans la technique. 
-        <br /><br />
-        J'ai commencé par suivre une formation professionnalisante intensive chez l'organisme
-        <a class="link" target="_blank" href="https://oclock.io/"> O'Clock </a>, formation de développement web fullstack JavaScript.<br />
-        Après avoir obtenu le diplôme, j'ai poursuivi mon apprentissage au sein de l'entreprise Linkeo en faisant d'abord un stage de 4 mois puis une alternance puis du freelance. <br />J'ai passé mon diplôme de concepteur développeur d'application avec l'organisme 3W Academy et je suis actuellement à la recherche d'un poste de développeur web.<br /><br />
-        Ayant conscience que la voie de l’apprentissage est infinie, je continue
-        à me former et à pratiquer avec des projets personnels dont les liens sont ci-contre.<br />
-      </p>
-    </div>
+    <section>
+      <h2 class="category-title" id="presentation">WHOAMI</h2>
+      <div class="presentation-container-flex">
+        <p class="category-para">
+          En cherchant un nouveau souffle à mon parcours professionnel, un de mes
+          proches, ingénieur en informatique, m'a mis sur la voie du développement
+          web. J'ai tout de suite accroché à la mentalité de partage de
+          connaissances chez la communauté de développeurs. La logique, l'aspect
+          recherche et l'inépuisable besoin de se former m'ont passionnés.
+          <br />Étant précédemment ingénieur du son dans le live, je cherchais une
+          voie stimulante dans la technique. 
+          <br /><br />
+          J'ai commencé par suivre une formation professionnalisante intensive chez l'organisme
+          <a class="link" target="_blank" href="https://oclock.io/"> O'Clock </a>, formation de développement web fullstack JavaScript.<br />
+          Après avoir obtenu le diplôme, j'ai poursuivi mon apprentissage au sein de l'entreprise Linkeo en faisant d'abord un stage de 4 mois puis une alternance puis du freelance. <br />J'ai passé mon diplôme de concepteur développeur d'application avec l'organisme 3W Academy et je suis actuellement à la recherche d'un poste de développeur web.<br /><br />
+          Ayant conscience que la voie de l’apprentissage est infinie, je continue
+          à me former et à pratiquer avec des projets personnels dont les liens sont ci-contre.<br />
+        </p>
+      </div>
+    </section>
 
     <!-- <hr class="projet__container" id="projets" /> -->
 
     <!-- Projets -->
+    <section>
+      <h2 class="category-title" id="projets">EXPERIENCES</h2>
+      <div class="category-para">
+        <div class="project-container">
+          <div class="project-title">
+            <div type="button" onclick="toggleText('jelo')" class="project-chevron-container">
+              <div class="gg-chevron-down"></div>
+              <div>
+                <h4>Freelance chez Jelo</h4>
+              </div>
+            </div>
+            <h4 class="date">Depuis mai 2023</h4>
+          </div>
+          <div id="jelo" style="display: none">
+            <div class="container-fairplay">
+              <div>
+                <h5 class="list-title">Description:</h5>
+                <p>Développeuse frontend. Refonte de l'interface administration, en autonomie sur le front, 15aine d'écrans. Récolte des données et parmétrage depuis/vers les machines connectées qui proposent des plateaux repas. </p>
+                <h5 class="list-title">Technologies:</h5>
+                <ul class="list-li">
+                  <li>Typescript</li>
+                  <li>React/ReduxToolkit</li>
+                  <li>Docker</li>
+                  <li>MaterialUI</li>
+                  <li>Gitlab</li>
+                  <li>Figma</li>
+                  <li>Jest</li>
+                </ul>
+              </div>
+              <img
+                  class="img-png"
+                  src="./static/img/jelo.png"
+                  alt="jelo"
+                />
+            </div>
+          </div>
+          <br />
+          <a class="link-big" target="_blank" href="https://www.jelo.co"
+            >Jelo</a
+          >
+        </div>
 
-    <h2 class="category-title" id="projets">EXPERIENCES</h2>
-    <div class="category-para">
 
-      <div class="project-container">
+        <div class="project-container">
+          <div class="project-title">
+            <div type="button" onclick="toggleText('linkeo')" class="project-chevron-container">
+              <div class="gg-chevron-down"></div>
+              <div>
+                <h4>Contrat d'alternance chez Linkeo, au siège, équipe SI</h4>
+              </div>
+            </div>
+            <h4 class="date">Novembre 2021/mars 2023</h4> 
+          </div>
+          <div id="linkeo" style="display: none">
+            <div class="container-fairplay">
+              <div>
+                <h5 class="list-title">Projets et tâches accomplies:</h5>
+              * SeoBooster: application pour l'amélioration du référencement des sites vendu aux clients. 
+              <br/>Développement d'un parser ODT en Java pour lire les documents des rédacteurs et en extraire les styles et liens. Génération d'une template pour document openOffice. 
+              <br/>Implémentation d'un éditeur et d'un système d'optimisation du linking des pages du contenu du site vendu au client. <br/>
+              * GestionCo: outils de pilotage des données de gestion de l'entreprise, et de gestion des primes aux commerciaux.<br/>
+              * Moteur de recherche à facette sur des factures.
+              <br/>
+                <h5 class="list-title">Technologies:</h5>
+                <ul class="list-li">
+                  <li>React/Redux/NextJs</li>
+                  <li>MySql/Workbench</li>
+                  <li>Quill-Editor</li>
+                  <li>librairie OpenOffice</li>
+                  <li>ElasticSearch</li>
+                  <li>MaterialUI</li>
+                  <li>Material React Table</li>
+                  <li>Bootstrap</li>
+                </ul>
+                <h5 class="list-title">Gestion:</h5>
+                <ul class="list-li">
+                <li class="list-li">Confluences</li>
+                <li class="list-li">Slack</li>
+                <li class="list-li">Git/Bibucket</li>
+              </div>
+              <img
+                  id="img-linkeo"
+                  src="./static/img/linkeo.png"
+                  alt="linkeo"
+                />
+            </div>
+          </div>
+          <br />
+          <a class="link-big" target="_blank" href="https://www.linkeo.com/"
+            >Linkeo</a
+          >
+        </div>
+
         
-        <div class="project-title">
-          <div type="button" onclick="toggleText('jelo')" class="project-chevron-container">
-            <div class="gg-chevron-down"></div>
-            <div>
-              <h4>Freelance chez Jelo</h4>
+        <div class="project-container">
+          <div class="project-title">
+            <div type="button" onclick="toggleText('dday')" class="project-chevron-container">
+              <div class="gg-chevron-down"></div>
+              <div>
+                <h4>Application: DDay</h4>
+              </div>
+            </div>
+            <h4 class="date">Février 2023</h4>
+          </div>
+          <div id="dday" style="display: none">
+            <div class="container-fairplay">
+              <div>
+                <h5 class="list-title">Objectifs:</h5>
+                <span class="list-li"
+                  >Aider des futurs mariés/pacsés à l'organisation de leur événement et informer les invités. <br/>
+                  Le client à accès à la gestion de sa liste d'invités, l'ajout d'événements, de lieux sur une carte, à la customisation de son site, l'envoi d'invitations et la récupération des réponses. 
+                  <br/>Un invité pourra visualiser les informations relatives à l'événement, envoyer sa réponse, écrire ses feedback dans le livre d'or</span>
+                <br />
+                <h5 class="list-title">Conception:</h5>
+                <ul class="list-li">
+                  <li>Merise</li>
+                  <li>UML</li>
+                </ul>
+                <h5 class="list-title">Technologies:</h5>
+                <ul class="list-li">
+                  <li>React/Redux DevTools/Material UI</li>
+                  <li>NodeJS/Express</li>
+                  <li>MySql/Workbench</li>
+                  <li>Firebase Auth</li>
+                </ul>
+                <h5 class="list-title">Déploiement:</h5>
+                <span class="list-li">VPS chez OVH, Nginx, Ubuntu</span>
+                <h5 class="list-title">Equipe:</h5>
+                <span class="list-li">seule</span>
+                <h5 class="list-title">Durée:</h5>
+                <span class="list-li">8 semaines</span>
+              </div>
+              <img
+                  id="img-dday"
+                  src="./static/img/dday.jpg"
+                  alt="dday"
+                />
             </div>
           </div>
-          <h4 class="date">Depuis mai 2023</h4>
+          <br />
+          <a class="link-big" target="_blank" href="https://dday.dev/"
+            >DDay.dev</a
+          >
         </div>
-        <div id="jelo" style="display: none">
-          <div class="container-fairplay">
-            <div>
-              <h5 class="list-title">Description:</h5>
-              <p>Développeuse frontend. Refonte de l'interface administration, en autonomie sur le front, 15aine d'écrans. Récolte des données et parmétrage depuis/vers les machines connectées qui proposent des plateaux repas. </p>
-              <h5 class="list-title">Technologies:</h5>
-              <ul class="list-li">
-                <li>Typescript</li>
-                <li>React/ReduxToolkit</li>
-                <li>Docker</li>
-                <li>MaterialUI</li>
-                <li>Gitlab</li>
-                <li>Figma</li>
-                <li>Jest</li>
-              </ul>
+
+            
+
+        <div class="project-container">
+          <div class="project-title">
+            <div type="button" onclick="toggleText('A&G')" class="project-chevron-container">
+              <div class="gg-chevron-down"></div>
+              <div>
+                <h4>Site privé de mariage: A&G</h4>
+              </div>
             </div>
-            <img
-                 class="img-png"
-                 src="./static/img/jelo.png"
-                 alt="jelo"
-               />
+            <h4 class="date">Avril 2021</h4>
           </div>
+          <div id="A&G" style="display: none">
+            <div class="container-fairplay">
+              <div>
+                <h5 class="list-title">Objectifs:</h5>
+                <span class="list-li"
+                  >Permettre aux organisateurs de recevoir les réponses invités
+                  sur leur liste google Sheets; informer les invités sur le
+                  déroulement du mariage. Pour se connecter, mail:
+                  clotildefauchille@gmail.com mp: Clo3748
+                </span>
+                <h5 class="list-title">Technologies:</h5>
+                <ul class="list-li">
+                  <li>React/Redux</li>
+                  <li>NodeJS/Express</li>
+                  <li>PostgreSQL</li>
+                  <li>Auth0/authManagement</li>
+                  <li>google Apps Script</li>
+                </ul>
+                <h5 class="list-title">Déploiement:</h5>
+                <span class="list-li">VPS chez OVH, Nginx, Ubuntu</span>
+                <h5 class="list-title">Equipe:</h5>
+                <span class="list-li">Seule</span>
+                <h5 class="list-title">Durée:</h5>
+                <span class="list-li">5 semaines</span>
+              </div>
+              <img
+                class="img-fairplay"
+                src="./static/img/stars.svg"
+                alt="fairplay"
+              />
+
+            </div>
+          </div>
+          <br />
+          <a class="link-big" target="_blank" href="http://annesophiegabriel.fr"
+            >annesophiegabriel.fr</a
+          >
         </div>
-        <br />
-        <a class="link-big" target="_blank" href="https://www.jelo.co"
-          >Jelo</a
-        >
-      </div>
 
 
-      <div class="project-container">
-        
-        <div class="project-title">
-          <div type="button" onclick="toggleText('linkeo')" class="project-chevron-container">
-            <div class="gg-chevron-down"></div>
-            <div>
-              <h4>Contrat d'alternance chez Linkeo, au siège, équipe SI</h4>
+        <div class="project-container">
+          <div class="project-title">
+            <div type="button" onclick="toggleText('fairplay')" class="project-chevron-container">
+              <div class="gg-chevron-down"></div>
+              <div>
+                <h4>Projet de fin de formation: Fairplay</h4>
+              </div>
+            </div>
+            <h4 class="date">Mars 2021</h4>
+          </div>
+          <div id="fairplay" style="display: none">
+            <div class="container-fairplay">
+              <div>
+                <h5 class="list-title">Objectifs:</h5>
+                <span class="list-li"
+                  >Permettre aux utilisateurs de participer/proposer des activités
+                  sportives dans son voisinage.</span
+                >
+                <br />
+                <h5 class="list-title">Conception et gestion:</h5>
+                <ul class="list-li">
+                  <li>Merise</li>
+                  <li>Scrum, Agile</li>
+                </ul>
+                <h5 class="list-title">Technologies:</h5>
+                <ul class="list-li">
+                  <li>React/Redux</li>
+                  <li>NodeJS/Express</li>
+                  <li>Sequelize/PostgreSQL</li>
+                  <li>l'API mapbox-gl</li>
+                </ul>
+                <h5 class="list-title">Déploiement:</h5>
+                <span class="list-li">VPS chez OVH, Nginx, Ubuntu</span>
+                <h5 class="list-title">Equipe:</h5>
+                <span class="list-li">4 étudiants</span>
+                <h5 class="list-title">Durée:</h5>
+                <span class="list-li">4 semaines</span>
+              </div>
+              <img
+                class="img-fairplay"
+                src="./static/img/fairplay.svg"
+                alt="fairplay"
+              />
             </div>
           </div>
-          <h4 class="date">Novembre 2021/mars 2023</h4> 
+          <br />
+          <a class="link-big" target="_blank" href="https://fairplay.dev/"
+            >fairplay.dev</a
+          >
         </div>
-        <div id="linkeo" style="display: none">
-          <div class="container-fairplay">
-            <div>
-              <h5 class="list-title">Projets et tâches accomplies:</h5>
-            * SeoBooster: application pour l'amélioration du référencement des sites vendu aux clients. 
-            <br/>Développement d'un parser ODT en Java pour lire les documents des rédacteurs et en extraire les styles et liens. Génération d'une template pour document openOffice. 
-            <br/>Implémentation d'un éditeur et d'un système d'optimisation du linking des pages du contenu du site vendu au client. <br/>
-            * GestionCo: outils de pilotage des données de gestion de l'entreprise, et de gestion des primes aux commerciaux.<br/>
-            * Moteur de recherche à facette sur des factures.
-            <br/>
-              <h5 class="list-title">Technologies:</h5>
-              <ul class="list-li">
-                <li>React/Redux/NextJs</li>
-                <li>MySql/Workbench</li>
-                <li>Quill-Editor</li>
-                <li>librairie OpenOffice</li>
-                <li>ElasticSearch</li>
-                <li>MaterialUI</li>
-                <li>Material React Table</li>
-                <li>Bootstrap</li>
-              </ul>
-              <h5 class="list-title">Gestion:</h5>
-              <ul class="list-li">
-              <li class="list-li">Confluences</li>
-              <li class="list-li">Slack</li>
-              <li class="list-li">Git/Bibucket</li>
-            </div>
-            <img
-                 id="img-linkeo"
-                 src="./static/img/linkeo.png"
-                 alt="linkeo"
-               />
-          </div>
-        </div>
-        <br />
-        <a class="link-big" target="_blank" href="https://www.linkeo.com/"
-          >Linkeo</a
-        >
-      </div>
-
       
-      <div class="project-container">
-        <div class="project-title">
-          <div type="button" onclick="toggleText('dday')" class="project-chevron-container">
-            <div class="gg-chevron-down"></div>
-            <div>
-              <h4>Application: DDay</h4>
+        <div class="project-container">
+          <div class="project-title">
+            <div type="button" onclick="toggleText('Distordus')" class="project-chevron-container">
+              <div class="gg-chevron-down"></div>
+              <div>
+                <h4>Distordus</h4>
+              </div>
             </div>
+            <h4 class="date">Juin 2020</h4>
           </div>
-          <h4 class="date">Février 2023</h4>
-        </div>
-        <div id="dday" style="display: none">
-          <div class="container-fairplay">
-            <div>
-              <h5 class="list-title">Objectifs:</h5>
-              <span class="list-li"
-                >Aider des futurs mariés/pacsés à l'organisation de leur événement et informer les invités. <br/>
-                Le client à accès à la gestion de sa liste d'invités, l'ajout d'événements, de lieux sur une carte, à la customisation de son site, l'envoi d'invitations et la récupération des réponses. 
-                <br/>Un invité pourra visualiser les informations relatives à l'événement, envoyer sa réponse, écrire ses feedback dans le livre d'or</span>
-              <br />
-              <h5 class="list-title">Conception:</h5>
-              <ul class="list-li">
-                <li>Merise</li>
-                <li>UML</li>
-              </ul>
-              <h5 class="list-title">Technologies:</h5>
-              <ul class="list-li">
-                <li>React/Redux DevTools/Material UI</li>
-                <li>NodeJS/Express</li>
-                <li>MySql/Workbench</li>
-                <li>Firebase Auth</li>
-              </ul>
-              <h5 class="list-title">Déploiement:</h5>
-              <span class="list-li">VPS chez OVH, Nginx, Ubuntu</span>
-              <h5 class="list-title">Equipe:</h5>
-              <span class="list-li">seule</span>
-              <h5 class="list-title">Durée:</h5>
-              <span class="list-li">8 semaines</span>
-            </div>
-            <img
-                 id="img-dday"
-                 src="./static/img/dday.jpg"
-                 alt="dday"
-               />
+          <div id="Distordus" style="display: none">
+            Distordus, pour appliquer des effets sur un enregistrement sonore,
+            utilisant l'API Audio. Déploiement continu<br />
+
+            <a class="link-big" target="_blank" href="https://distord.us/"
+              >https://distord.us/</a
+            ><br /><br /><br />
+            Divers plus petits projets à voir sur Github:
           </div>
+          <br />
+          <a
+            class="link-big"
+            target="_blank"
+            href="https://github.com/clotildefauchille"
+            >clotildefauchille</a
+          >
         </div>
-        <br />
-        <a class="link-big" target="_blank" href="https://dday.dev/"
-          >DDay.dev</a
-        >
+
       </div>
-
-          
-
-      <div class="project-container">
-        <div class="project-title">
-          <div type="button" onclick="toggleText('A&G')" class="project-chevron-container">
-            <div class="gg-chevron-down"></div>
-            <div>
-              <h4>Site privé de mariage: A&G</h4>
-            </div>
-          </div>
-          <h4 class="date">Avril 2021</h4>
-        </div>
-        <div id="A&G" style="display: none">
-          <div class="container-fairplay">
-            <div>
-              <h5 class="list-title">Objectifs:</h5>
-              <span class="list-li"
-                >Permettre aux organisateurs de recevoir les réponses invités
-                sur leur liste google Sheets; informer les invités sur le
-                déroulement du mariage. Pour se connecter, mail:
-                clotildefauchille@gmail.com mp: Clo3748
-              </span>
-              <h5 class="list-title">Technologies:</h5>
-              <ul class="list-li">
-                <li>React/Redux</li>
-                <li>NodeJS/Express</li>
-                <li>PostgreSQL</li>
-                <li>Auth0/authManagement</li>
-                <li>google Apps Script</li>
-              </ul>
-              <h5 class="list-title">Déploiement:</h5>
-              <span class="list-li">VPS chez OVH, Nginx, Ubuntu</span>
-              <h5 class="list-title">Equipe:</h5>
-              <span class="list-li">Seule</span>
-              <h5 class="list-title">Durée:</h5>
-              <span class="list-li">5 semaines</span>
-            </div>
-            <img
-              class="img-fairplay"
-              src="./static/img/stars.svg"
-              alt="fairplay"
-            />
-
-          </div>
-        </div>
-        <br />
-        <a class="link-big" target="_blank" href="http://annesophiegabriel.fr"
-          >annesophiegabriel.fr</a
-        >
-      </div>
-
-
-      <div class="project-container">
-        <div class="project-title">
-          <div type="button" onclick="toggleText('fairplay')" class="project-chevron-container">
-            <div class="gg-chevron-down"></div>
-            <div>
-              <h4>Projet de fin de formation: Fairplay</h4>
-            </div>
-          </div>
-          <h4 class="date">Mars 2021</h4>
-        </div>
-        <div id="fairplay" style="display: none">
-          <div class="container-fairplay">
-            <div>
-              <h5 class="list-title">Objectifs:</h5>
-              <span class="list-li"
-                >Permettre aux utilisateurs de participer/proposer des activités
-                sportives dans son voisinage.</span
-              >
-              <br />
-              <h5 class="list-title">Conception et gestion:</h5>
-              <ul class="list-li">
-                <li>Merise</li>
-                <li>Scrum, Agile</li>
-              </ul>
-              <h5 class="list-title">Technologies:</h5>
-              <ul class="list-li">
-                <li>React/Redux</li>
-                <li>NodeJS/Express</li>
-                <li>Sequelize/PostgreSQL</li>
-                <li>l'API mapbox-gl</li>
-              </ul>
-              <h5 class="list-title">Déploiement:</h5>
-              <span class="list-li">VPS chez OVH, Nginx, Ubuntu</span>
-              <h5 class="list-title">Equipe:</h5>
-              <span class="list-li">4 étudiants</span>
-              <h5 class="list-title">Durée:</h5>
-              <span class="list-li">4 semaines</span>
-            </div>
-            <img
-              class="img-fairplay"
-              src="./static/img/fairplay.svg"
-              alt="fairplay"
-            />
-          </div>
-        </div>
-        <br />
-        <a class="link-big" target="_blank" href="https://fairplay.dev/"
-          >fairplay.dev</a
-        >
-      </div>
-     
-          
-
-      <div class="project-container">
-        <div class="project-title">
-          <div type="button" onclick="toggleText('Distordus')" class="project-chevron-container">
-            <div class="gg-chevron-down"></div>
-            <div>
-              <h4>Distordus</h4>
-            </div>
-          </div>
-          <h4 class="date">Juin 2020</h4>
-        </div>
-        <div id="Distordus" style="display: none">
-          Distordus, pour appliquer des effets sur un enregistrement sonore,
-          utilisant l'API Audio. Déploiement continu<br />
-
-          <a class="link-big" target="_blank" href="https://distord.us/"
-            >https://distord.us/</a
-          ><br /><br /><br />
-          Divers plus petits projets à voir sur Github:
-        </div>
-        <br />
-        <a
-          class="link-big"
-          target="_blank"
-          href="https://github.com/clotildefauchille"
-          >clotildefauchille</a
-        >
-      </div>
-
+    </section>  
       <!-- <hr class="outils__container" id="outils" /> -->
 
       <!-- outils -->
-      <h2 class="category-title" id="outils">Compétences</h2>
-      <div class="outils-container">
-        <div class="progress-bar-container-four">
-          <div class="progress-bar-container">
-            Node JS/ExpressJS
-            <div class="progress-bar-loading sixty"></div>
+      <section>
+        <h2 class="category-title" id="outils">COMPETENCES</h2>
+        <div class="outils-container">
+          <div class="progress-bar-container-four">
+            <div class="progress-bar-container">
+              Node JS/ExpressJS
+              <div class="progress-bar-loading sixty"></div>
+            </div>
+            <div class="progress-bar-container">
+              React
+              <div class="progress-bar-loading seventy"></div>
+            </div>
+            <div class="progress-bar-container">
+              Redux/Redux ToolKit
+              <div class="progress-bar-loading eighty"></div>
+            </div>
+            <div class="progress-bar-container">
+              Git/Github/Bitbucket
+              <div class="progress-bar-loading seventy"></div>
+            </div>
+            <div class="progress-bar-container">
+              JavaScript
+              <div class="progress-bar-loading seventy"></div>
+            </div>
+            <div class="progress-bar-container">
+              Scrum/Agiles
+              <div class="progress-bar-loading eighty"></div>
+            </div>
+            <div class="progress-bar-container">
+              Bases de PHP, Java, NextJs, VueJs, Docker, CI/CD
+              <div class="progress-bar-loading twenty"></div>
+            </div>
           </div>
-          <div class="progress-bar-container">
-            React
-            <div class="progress-bar-loading seventy"></div>
-          </div>
-          <div class="progress-bar-container">
-            Redux/Redux ToolKit
+          <div class="progress-bar-container-four">
+            <div class="progress-bar-container">
+              SQL/MySql/PostgresSql
+              <div class="progress-bar-loading seventy"></div>
+            </div>
+            <div class="progress-bar-container">
+              ElasticSearch
+              <div class="progress-bar-loading thirty"></div>
+            </div>
+            <div class="progress-bar-container">
+              Css/Sass
+              <div class="progress-bar-loading seventy"></div>
+            </div>
+            <div class="progress-bar-container">
+              Mui/Bootsrap
+              <div class="progress-bar-loading seventy"></div>
+            </div>
+            <div class="progress-bar-container">
+              Merise
             <div class="progress-bar-loading eighty"></div>
-          </div>
-          <div class="progress-bar-container">
-            Git/Github/Bitbucket
-            <div class="progress-bar-loading seventy"></div>
-          </div>
-          <div class="progress-bar-container">
-            JavaScript
-            <div class="progress-bar-loading seventy"></div>
-          </div>
-          <div class="progress-bar-container">
-            Scrum/Agiles
+            </div>
+            <div class="progress-bar-container">
+              UML
             <div class="progress-bar-loading eighty"></div>
-          </div>
-          <div class="progress-bar-container">
-            Bases de PHP, Java, NextJs, VueJs, Docker, CI/CD
-            <div class="progress-bar-loading twenty"></div>
+            </div>
+            <div class="progress-bar-container">
+              Typescript
+            <div class="progress-bar-loading eighty"></div>
+            </div>
           </div>
         </div>
-        <div class="progress-bar-container-four">
-          <div class="progress-bar-container">
-            SQL/MySql/PostgresSql
-            <div class="progress-bar-loading seventy"></div>
-          </div>
-          <div class="progress-bar-container">
-            ElasticSearch
-            <div class="progress-bar-loading thirty"></div>
-          </div>
-          <div class="progress-bar-container">
-            Css/Sass
-            <div class="progress-bar-loading seventy"></div>
-          </div>
-          <div class="progress-bar-container">
-            Mui/Bootsrap
-            <div class="progress-bar-loading seventy"></div>
-          </div>
-          <div class="progress-bar-container">
-            Merise
-          <div class="progress-bar-loading eighty"></div>
-          </div>
-          <div class="progress-bar-container">
-            UML
-          <div class="progress-bar-loading eighty"></div>
-          </div>
-          <div class="progress-bar-container">
-            Typescript
-          <div class="progress-bar-loading eighty"></div>
-          </div>
-        </div>
-      </div>
-      <hr class="contact__container" id="contact" />
-
+        <hr class="contact__container" id="contact" />
+      </section>
       <!-- contact -->
-      <h2 class="category-title">CONTACT</h2>
-      <div class="contact-container">
-        <div class="container-github">
-          <div class="contact-cv-btn link-btn">
+      <section>
+        <h2 class="category-title">CONTACT</h2>
+        <div class="contact-container">
+          <div class="container-github">
+            <div class="contact-cv-btn link-btn">
+              <a
+                href="static/document/clotildefauchille-cv.pdf"
+                download=""
+                class=""
+                ><span>Téléchargement CV</span></a
+              >
+            </div>
+            <a target="_blank" href="https://github.com/clotildefauchille"
+              ><img src="static/img/github.jpeg" class="github link-btn"
+            /></a>
             <a
-              href="static/document/clotildefauchille-cv.pdf"
-              download=""
-              class=""
-              ><span>Téléchargement CV</span></a
-            >
+              target="_blank"
+              href="https://www.linkedin.com/in/clotildefauchille/"
+              ><img src="static/img/linkedin.png" class="linkedin link-btn"
+            /></a>
           </div>
-          <a target="_blank" href="https://github.com/clotildefauchille"
-            ><img src="static/img/github.jpeg" class="github link-btn"
-          /></a>
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/clotildefauchille/"
-            ><img src="static/img/linkedin.png" class="linkedin link-btn"
-          /></a>
         </div>
-      </div>
-    </div>
-    <div class="contact-number-mail-container">
-      <a class="contact-mail" href="mailto:clotildefauchille@gmail.com"
-        >clotildefauchille@gmail.com
-      </a>
+      
+      <div class="contact-number-mail-container">
+        <a class="contact-mail" href="mailto:clotildefauchille@gmail.com"
+          >clotildefauchille@gmail.com
+        </a>
 
-      <span class="contact-tel">06 66 36 78 34</span>
-    </div>
+        <span class="contact-tel">06 66 36 78 34</span>
+      </div>
+    </section>
     <!-- Script -->
     <script src="js/display.js"></script>
   </body>
