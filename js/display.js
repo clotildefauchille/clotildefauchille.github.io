@@ -62,3 +62,23 @@ document.addEventListener('DOMContentLoaded', function (event) {
     // start the text animation
     StartTextAnimation(0);
 });
+
+
+function incrementViewCount() {
+    if (localStorage.getItem("viewCount") === null) {
+        localStorage.setItem("viewCount", "1");
+    } else {
+        var currentCount = parseInt(localStorage.getItem("viewCount"));
+        localStorage.setItem("viewCount", (currentCount + 1).toString());
+    }
+}
+
+function displayViewCount() {
+    var viewCountElement = document.getElementById("viewCount");
+    var viewCount = localStorage.getItem("viewCount") || "0";
+    viewCountElement.textContent = viewCount;
+}
+
+incrementViewCount();
+
+displayViewCount();
