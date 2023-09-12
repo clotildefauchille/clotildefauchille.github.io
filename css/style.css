@@ -1,16 +1,15 @@
 body {
   font-family: "Hind", sans-serif;
-  background-color: white;
-  /* animation: pulse 5s infinite; */
+  background-color: #d8e7e150;
   margin-left: 4rem;
   margin-right: 4rem;
+
 }
 
 .nav-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  /* background-color: #9CC4CC30; */
   top: 0;
   left: 0;
   position: fixed;
@@ -31,26 +30,61 @@ body {
 }
 
 header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   width: 100%;
   background-color: white;
-  border-radius: 14px;
   box-shadow: 0 0 3px 1px whitesmoke inset;
   background-size: 1em 1em, 100% 100%;
-  background-blend-mode: hard-light;
-  outline: 9px ridge #CFEBDF;
   margin-top: 10rem;
+  position: relative;
+  overflow: hidden;
+
 }
 
 .header-title {
   color: black;
   margin-bottom: 4rem;
+  font-size: 2.2em;
 }
 
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  text-align: center;
+  padding: 1rem;
+  line-height: 5rem;
+  font-family: 'Varela Round', sans-serif;
+  /* Empêche le texte de passer à la ligne */
+  overflow: hidden;
+}
+
+.header-content h1 {
+  color: black;
+  font-size: 2.2em;
+  font-weight: bold;
+  margin: 0;
+  white-space: normal;
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+}
+
+
+/* 
+.header-image {
+  background-image: url('../static/img/stairs.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+} */
+
+
 .photo-container {
-  background-image: url('../static/img/photo_cv.png');
+  background-image: url('../static/img/stairs.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -172,14 +206,6 @@ header {
   top: 0.5rem;
 }
 
-.header-title {
-  font-size: 2.2em;
-  padding: 7rem 0rem 4rem 4rem;
-  min-width: 64%;
-  text-align: center;
-  font-weight: bold;
-  text-shadow: 1px 7px 8px whitesmoke;
-}
 
 .cv-header {
   color: black;
@@ -265,18 +291,24 @@ header {
   object-fit: cover;
   width: 40%;
   height: 15rem;
+  margin-top: 1rem;
+  margin-left: 1rem
 }
 
 #img-dday {
   object-fit: cover;
   width: 40%;
   height: 25rem;
+  margin-top: 1rem;
+  margin-left: 1rem
 }
 
 #img-linkeo {
   object-fit: cover;
   width: 40%;
   height: 15rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
 }
 
 .list-title {
@@ -510,8 +542,10 @@ h4 {
 
   .header-title {
     font-size: 1.5rem;
-    padding: 2rem 1rem 0 1rem;
+    padding: 2rem 1rem 2rem 1rem;
     margin-bottom: 1rem;
+    text-align: center;
+    align-items: center;
   }
 
   .jungle-photo {
