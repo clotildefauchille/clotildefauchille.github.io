@@ -37,14 +37,8 @@ header {
   margin-top: 10rem;
   position: relative;
   overflow: hidden;
-
 }
 
-.header-title {
-  color: black;
-  margin-bottom: 4rem;
-  font-size: 2.2em;
-}
 
 .header-content {
   position: absolute;
@@ -56,8 +50,6 @@ header {
   padding: 1rem;
   line-height: 5rem;
   font-family: 'Varela Round', sans-serif;
-  /* Empêche le texte de passer à la ligne */
-  overflow: hidden;
 }
 
 .header-content h1 {
@@ -73,23 +65,6 @@ header {
   height: auto;
 }
 
-
-/* 
-.header-image {
-  background-image: url('../static/img/stairs.jpeg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-} */
-
-
-.photo-container {
-  background-image: url('../static/img/stairs.jpeg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-}
-
 .container {
   display: flex;
   justify-content: center;
@@ -98,100 +73,6 @@ header {
   height: 100vh;
 }
 
-#download-cv {
-  position: absolute;
-  left: 5rem;
-  top: 23rem;
-  color: black;
-  font-weight: bold;
-}
-
-.arrow {
-  top: 18rem;
-  position: absolute;
-}
-
-.chevron {
-  position: absolute;
-  width: 1.5rem;
-  height: 0.30rem;
-  opacity: 0;
-  transform: scale(0.3);
-  -webkit-animation: move-chevron 3s ease-out infinite;
-  animation: move-chevron 3s ease-out infinite;
-}
-
-.chevron:first-child {
-  -webkit-animation: move-chevron 3s ease-out 1s infinite;
-  animation: move-chevron 3s ease-out 1s infinite;
-}
-
-.chevron:nth-child(2) {
-  -webkit-animation: move-chevron 3s ease-out 2s infinite;
-  animation: move-chevron 3s ease-out 2s infinite;
-}
-
-.chevron:before, .chevron:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 50%;
-  background: black;
-}
-
-.chevron:before {
-  left: 0;
-  transform: skewY(30deg);
-}
-
-.chevron:after {
-  right: 0;
-  width: 50%;
-  transform: skewY(-30deg);
-}
-
-@-webkit-keyframes move-chevron {
-  25% {
-    opacity: 1;
-  }
-
-  33.3% {
-    opacity: 1;
-    transform: translateY(2.28rem);
-  }
-
-  66.6% {
-    opacity: 1;
-    transform: translateY(3.12rem);
-  }
-
-  100% {
-    opacity: 0;
-    transform: translateY(4.8rem) scale(0.5);
-  }
-}
-
-@keyframes move-chevron {
-  25% {
-    opacity: 1;
-  }
-
-  33.3% {
-    opacity: 1;
-    transform: translateY(2.28rem);
-  }
-
-  66.6% {
-    opacity: 1;
-    transform: translateY(3.12rem);
-  }
-
-  100% {
-    opacity: 0;
-    transform: translateY(4.8rem) scale(0.5);
-  }
-}
 
 .link {
   text-decoration: underline;
@@ -503,9 +384,17 @@ h4 {
 }
 
 .contact-mail {
-  /* background-color: red; */
   margin-bottom: 2rem;
 }
+
+.contact-number-mail-container {
+  text-align: center;
+  margin: 0.5rem;
+  font-weight: bold;
+}
+
+
+/* mobile */
 
 @media (max-width: 640px) {
   body {
@@ -528,42 +417,37 @@ h4 {
     border-top: 1px solid black
   }
 
+
   header {
-    flex-direction: column;
-    border-radius: 0px;
-    outline: none;
-    box-shadow: none;
-    margin-top: 0;
+    width: 100%;
+    box-shadow: 0 0 3px 1px whitesmoke inset;
+    background-size: 4rem 4rem, 100% 100%;
+    margin-top: 0rem;
+    position: relative;
+    overflow: hidden;
   }
 
-  .cv-header {
-    padding-top: 2.4rem;
+
+  .header-content {
+    line-height: 2rem;
+    /* font-size: 0.7rem; */
   }
 
-  .header-title {
-    font-size: 1.5rem;
-    padding: 2rem 1rem 2rem 1rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    align-items: center;
+  .header-content h1 {
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+    white-space: normal;
   }
 
-  .jungle-photo {
-    display: none;
-    /* max-width: none;
-    width: 39%;
-    height: auto;
-    margin-left: 15.5rem;
-    margin-top: -4.5rem; */
+  .header-image {
+    width: 100%;
+    height: 28vh;
   }
 
-  .arrow {
-    top: 4rem;
-  }
-
-  #download-cv {
-    left: 1rem;
-    top: 9rem;
+  #presentation {
+    border-top: none;
   }
 
   .category-title {
@@ -593,6 +477,15 @@ h4 {
 
   }
 
+  h4 {
+    font-size: 1.3rem;
+  }
+
+  .link-big {
+    font-size: 1.3rem;
+
+  }
+
   .date {
     font-size: 1rem;
     margin-bottom: 0rem;
@@ -611,9 +504,7 @@ h4 {
     font-size: 1.1rem;
   }
 
-  .contact-number-mail-container {
-    text-align: center;
-  }
+
 
   #contact {
     display: none;
